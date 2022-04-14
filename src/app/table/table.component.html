@@ -1,0 +1,15 @@
+<h1>HTML Table Practice</h1>
+
+<!-- [{name: "Pearce", color1: "Orange", color2: "Teal"}, etc...] -->
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Color 1</th>
+        <th>Color 2</th>
+    </tr>
+    <tr *ngFor="let dude of people">
+        <td>{{dude.name}}</td>
+        <td class="color" [style.backgroundColor]="dude.color1">{{dude.color1}}</td>
+        <td class="color" [style.backgroundColor]="dude.color2">{{dude.color2}}</td>
+    </tr>
+</table>
